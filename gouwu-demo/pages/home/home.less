@@ -1,0 +1,77 @@
+swiper {
+  width: 100%;
+  height: 340rpx;
+  image {
+    width: 100%;
+    height: 340rpx;
+  }
+}
+
+// 菜单导航
+.menus {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 24rpx;
+  padding-bottom: 29rpx;
+  .menus-item {
+    image {
+      width: 128rpx;
+      height: 128rpx;
+    }
+  }
+}
+
+.floor {
+  .floor-title {
+    background-color: #f4f4f4;
+    padding-top: 30rpx;
+    image {
+      width: 100%;
+      height: 59rpx;
+    }
+  }
+  .floor-body {
+    display: flex;
+    padding: 20rpx 16rpx;
+    .left {
+      height: 386rpx;
+      padding-right: 10rpx;
+      image {
+        width: 232rpx;
+        height: 386rpx;
+      }
+    }
+    .right {
+      height: 386rpx;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-content: space-between;
+      image {
+        width: 233rpx;
+        height: 188rpx;
+      }
+    }
+  }
+}
+
+// 回到顶部
+.top {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  background-color: #fff;
+
+  position: fixed;
+  right: 20rpx;
+  bottom: 20rpx;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+[hidden] {
+  display: none !important;
+}

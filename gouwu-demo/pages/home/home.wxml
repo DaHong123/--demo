@@ -1,0 +1,44 @@
+<view class="home">
+	<!-- 搜索框 -->
+	<SearchHeader></SearchHeader>
+	<swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="{{3000}}" duration="{{300}}" circular="{{true}}">
+		<swiper-item wx:for="{{swiperList}}" wx:key="goods_id">
+			<image src="{{item.image_src}}"></image>
+		</swiper-item>
+	</swiper>
+
+	<!-- 菜单导航 -->
+	<view class="menus">
+		<view class="menus-item" wx:for="{{navList}}" wx:key="name">
+			<image src="{{item.image_src}}"></image>
+		</view>
+	</view>
+
+	<!-- 楼层 -->
+	<view class="floor" wx:for="{{floorList}}" wx:key="index">
+		<!-- 标题 -->
+		<view class="floor-title">
+			<image src="{{item.floor_title.image_src}}"></image>
+		</view>
+		<!-- 主题 -->
+		<view class="floor-body">
+			<view class="left">
+				<image src="{{item.product_list[0].image_src}}"></image>
+			</view>
+			<view class="right">
+				<!-- <image src="{{item.product_list[1].image_src}}"></image>
+				<image src="{{item.product_list[2].image_src}}"></image>
+				<image src="{{item.product_list[3].image_src}}"></image>
+				<image src="{{item.product_list[4].image_src}}"></image> -->
+				<image wx:for="{{item.product_list}}" wx:for-index="i" wx:for-item="v" wx:key="name" src="{{v.image_src}}" wx:if="{{i !== 0}}"></image>
+			</view>
+		</view>
+	</view>
+
+	<!-- 回到顶部按钮 -->
+	<!-- wx:if wx:else  hidden -->
+	<view class="top" hidden="{{isHidden}}" bindtap="goTop">
+		<text class="iconfont icon-dingbu"></text>
+		<text>顶部</text>
+	</view>
+</view>

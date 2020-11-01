@@ -1,0 +1,28 @@
+<view>
+	<SearchHeader></SearchHeader>
+
+	<view class="cates">
+		<scroll-view class="cates_left" scroll-y="{{true}}">
+			<view bindtap="tapFn" data-index="{{index}}" class="{{index === activeIndex ? 'active': ''}}" wx:for="{{leftMenuData}}" wx:key="*this">{{item}}</view>
+		</scroll-view>
+		<scroll-view scroll-top="{{topNum}}" class="cates_right" scroll-y="{{true}}">
+			<view class="banner">
+				<image src="/assets/upload/category_banner@2x.png"></image>
+			</view>
+			<view class="list" wx:for="{{rightMenuData}}" wx:key="cat_id">
+				<view class="title">
+					<text class="line">/</text>
+					<text decode>&emsp;{{item.cat_name}}&emsp;</text>
+					<text class="line">/</text>
+				</view>
+				<view class="content">
+					<view bindtap="goList" data-id="{{v.cat_id}}" data-name="{{v.cat_name}}" class="item" wx:for="{{item.children}}" wx:key="cat_id" wx:for-item="v">
+						<image src="{{v.cat_icon}}"></image>
+						<text>{{v.cat_name}}</text>
+					</view>
+				</view>
+			</view>
+
+		</scroll-view>
+	</view>
+</view>

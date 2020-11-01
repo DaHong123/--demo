@@ -1,0 +1,125 @@
+page {
+  padding-bottom: 100rpx;
+}
+.address {
+  height: 140rpx;
+  background: #f4f4f4;
+  .address1 {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .address2 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10rpx 20rpx;
+    .address2-top {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+.cart-title {
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  padding-left: 20rpx;
+  font-size: 36rpx;
+  color: var(--themeColor);
+  border-top: 1px solid var(--themeColor);
+  border-bottom: 1px solid var(--themeColor);
+}
+.cart {
+  height: 240rpx;
+  border-bottom: 2rpx solid #ccc;
+  display: flex;
+  .cart1 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cart2 {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    image {
+      width: 90%;
+    }
+  }
+  .cart3 {
+    flex: 4;
+    padding: 20rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .cart3-top {
+      word-break: break-all;
+    }
+    .cart3-bottom {
+      display: flex;
+      justify-content: space-between;
+      .price {
+        color: var(--themeColor);
+      }
+      .edit {
+        display: flex;
+        .calc {
+          width: 20px;
+          height: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: 1px solid #ccc;
+        }
+        .num {
+          margin: 0 20rpx;
+        }
+      }
+    }
+  }
+}
+
+.tool {
+  height: 100rpx;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 2rpx solid #ccc;
+  display: flex;
+  background-color: #fff;
+  .tool1 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tool2 {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 8rpx;
+    .tool2-top {
+      text {
+        color: var(--themeColor);
+        font-weight: 700;
+      }
+    }
+  }
+  .tool3 {
+    flex: 1;
+    background: var(--themeColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 700;
+  }
+}

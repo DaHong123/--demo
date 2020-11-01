@@ -1,0 +1,84 @@
+swiper {
+  width: 750rpx;
+  height: 340rpx;
+}
+swiper image {
+  height: 340rpx;
+  width: 750rpx;
+}
+.price {
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  padding-left: 20rpx;
+  font-size: 38rpx;
+  color: var(--themeColor);
+}
+.title {
+  border-top: 4rpx solid #666;
+  border-bottom: 4rpx solid #666;
+  display: flex;
+}
+.title-l {
+  flex: 4;
+  padding: 0 10rpx;
+  margin: 10rpx 0;
+  border-right: 1px solid #999;
+}
+.title-r {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title-r .icon-wujiaoxingkong {
+  margin-bottom: 5rpx;
+}
+.desc-title {
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  padding-left: 20rpx;
+  font-size: 38rpx;
+  color: var(--themeColor);
+  font-weight: 700;
+}
+.desc {
+  padding-bottom: 100rpx;
+}
+.tool {
+  height: 100rpx;
+  background: yellowgreen;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  border-top: 1px solid #ccc;
+}
+.tool .tool1 {
+  flex: 1;
+  background: #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tool .tool2 {
+  flex: 1.5;
+  background: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 700;
+}
+.tool .tool3 {
+  flex: 1.5;
+  background: var(--themeColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 700;
+}

@@ -1,0 +1,11 @@
+<view class="list">
+	<Tab tabs="{{tabs}}" bindchange="changeFn"></Tab>
+	<!-- 显示内容 -->
+	<view hidden="{{!tabs[0].isActive}}">
+		<GoodsItem wx:for="{{list}}" wx:key="goods_id" good="{{item}}"></GoodsItem>
+	</view>
+	<view hidden="{{!tabs[1].isActive}}"> 销量</view>
+	<view hidden="{{!tabs[2].isActive}}">价格</view>
+
+	<view class="tips" hidden="{{hasMore}}">没有更多数据了~</view>
+</view>

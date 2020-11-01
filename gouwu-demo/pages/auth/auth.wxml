@@ -1,0 +1,1 @@
+<button type="primary" open-type="getUserInfo" bindgetuserinfo="login" plain="{{ true }}">登录授权</button>

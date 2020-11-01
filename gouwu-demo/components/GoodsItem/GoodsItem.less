@@ -1,0 +1,36 @@
+.goods {
+  height: 240rpx;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  .left {
+    width: 240rpx;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    image {
+      width: 180rpx;
+      height: 180rpx;
+    }
+  }
+  .right {
+    flex: 1;
+    padding: 40rpx 20rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .top {
+      display: -webkit-box;
+      overflow: hidden;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      word-break: break-all;
+    }
+    .bottom {
+      .price {
+        padding-left: 12rpx;
+        color: var(--themeColor);
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "Tab": "/components/Tab/Tab",
+    "GoodsItem": "/components/GoodsItem/GoodsItem"
+  },
+  "onReachBottomDistance": 200,
+  "enablePullDownRefresh": true
+}
